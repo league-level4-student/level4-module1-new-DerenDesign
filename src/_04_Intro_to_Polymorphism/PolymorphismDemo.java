@@ -31,6 +31,11 @@ class Fish extends Animal {
         System.out.println("Gurgle Gurgle Gurgle!");
     }
 }
+class Eat extends Dog {
+    public void speak() {
+        System.out.println("Chomp Chomp Chomp!");
+    }
+}
 
 public class PolymorphismDemo {
     public static void main(String[] args) {
@@ -46,15 +51,15 @@ public class PolymorphismDemo {
          * declared as an Animal on the left side.
          */
 
-        Animal animal = new Animal();
-
+        Animal animal = new Dog();
+        animal.speak();
         /*
          * 2. Call the speak method and run the program.
          * 
          * Even though the variable was declared as an Animal, at run time it
          * will behave like whatever Animal subclass it was instantiated as.
          */
-
+        
         /*
          * 3. Comment out the speak method of the Animal subclass you chose and
          * run the program again.
